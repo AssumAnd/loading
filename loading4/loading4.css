@@ -1,0 +1,50 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+.content{
+  display: none;
+}
+
+#div {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#imagem {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+  animation: unblur 3s alternate;
+  height: 100%;
+}
+
+#imagem img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+#titulosubtitulo {
+  margin: 20% 0 0 0;
+  animation: animate 3.5s linear;
+}
+
+@keyframes animate{
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
