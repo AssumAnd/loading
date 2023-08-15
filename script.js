@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
         document.querySelector('.box-load').style.display = "none";

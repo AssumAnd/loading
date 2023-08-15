@@ -4,27 +4,17 @@
     border: 0;
 }
 
-@keyframes animate {
-    0% {
-        transform: translateX(-50%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
 .content {
     display: none;
 }
 
 .pre {
-    width: 90%;
+    width: 100%;
     height: 300px;
     background-image: url("/assets/logo.png");
     background-position: center;
     background-repeat: no-repeat;
-    animation: animate 5s alternate;
+    /* animation: animate 5s alternate; */
 }
 
 .box-load {
@@ -34,14 +24,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: unblur 13s infinite alternate;
+    animation: changeBackground 13s infinite alternate;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
-@keyframes unblur {
+@keyframes changeBackground {
     0% {
         background-image: url(/assets/rj.jpg);
     }
@@ -62,3 +52,17 @@
         background-image: url(/assets/rj5.jpg);
     }
 }
+
+/*
+
+@keyframes animate {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+*/
